@@ -27,6 +27,6 @@ module "vpc" {
   project_name       = var.project_name
   environment        = "prod"
   vpc_cidr           = var.vpc_cidr
-  az_count           = 3              # 3 AZs for high availability in prod
-  enable_nat_gateway = true           # prod needs private subnet internet access
+  az_count           = 3    # 3 AZs for high availability in prod
+  enable_nat_gateway = true # prod needs private subnet internet access
 }
